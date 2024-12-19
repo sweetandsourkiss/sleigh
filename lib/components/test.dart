@@ -1,9 +1,8 @@
-import 'dart:ui';
-
 import 'package:flame/components.dart';
 import 'package:flutter/material.dart';
+import 'package:spring/spring.dart';
 
-class Test extends PositionComponent {
+class Test extends PositionComponent with HasGameReference<Spring> {
   @override
   bool get debugMode => true;
 
@@ -11,9 +10,9 @@ class Test extends PositionComponent {
   void render(Canvas canvas) {
     canvas.drawRRect(
       RRect.fromRectAndRadius(
-          Vector2(330, 600).toRect(), const Radius.circular(10)),
+          Vector2(size.x, size.y).toRect(), const Radius.circular(0)),
       Paint()
-        ..color = Colors.amber
+        ..color = Colors.teal
         ..style = PaintingStyle.fill,
     );
   }

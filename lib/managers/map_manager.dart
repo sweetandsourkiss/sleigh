@@ -1,4 +1,5 @@
 import 'package:flame/game.dart';
+import 'package:spring/objects/stage.dart';
 import 'package:spring/objects/sleigh.dart';
 import 'package:spring/objects/chimney.dart';
 import 'package:spring/objects/road.dart';
@@ -14,7 +15,7 @@ final maps = [
   map1,
 ];
 
-final map1 = [
+final map1 = SleighStage(size: 4, blocks: [
   Block(gridPosition: Vector2(0, 0), blockType: RoadBlock),
   Block(gridPosition: Vector2(1, 0), blockType: RoadBlock),
   Block(gridPosition: Vector2(2, 0), blockType: RoadBlock),
@@ -32,4 +33,4 @@ final map1 = [
   Block(gridPosition: Vector2(1, 3), blockType: RoadBlock),
   Block(gridPosition: Vector2(2, 3), blockType: RoadBlock),
   Block(gridPosition: Vector2(3, 3), blockType: RoadBlock),
-];
+]);

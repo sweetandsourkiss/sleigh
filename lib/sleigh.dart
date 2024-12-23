@@ -13,7 +13,7 @@ class SleighGame extends FlameGame {
   @override
   FutureOr<void> onLoad() async {
     await images.loadAll([
-      'template_road.png',
+      'road_intersection.png',
     ]);
     camera.viewfinder.anchor = Anchor.topCenter;
     camera.viewfinder.visibleGameSize = Vector2(size.x, size.y);

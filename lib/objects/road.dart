@@ -14,7 +14,7 @@ class RoadBlock extends SpriteComponent with HasGameReference<SleighGame> {
 
   @override
   FutureOr<void> onLoad() {
-    final roadImage = game.images.fromCache('template_road.png');
+    final roadImage = game.images.fromCache('road_intersection.png');
     sprite = Sprite(roadImage);
     position = Vector2(
         gridPosition.x * size.x + offset.x, gridPosition.y * size.y + offset.y);

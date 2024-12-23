@@ -26,10 +26,18 @@ class SleighGame extends FlameGame {
   }
 
   void loadGameMap(int mapIndex) {
-    for (final block in maps[mapIndex]) {
+    for (final block in maps[mapIndex].blocks) {
       switch (block.blockType) {
         case const (RoadBlock):
-          add(RoadBlock(gridPosition: block.gridPosition));
+          add(
+            RoadBlock(
+              gridPosition: block.gridPosition,
+              offset: Vector2(
+                size.x / 2 - maps[mapIndex].size * 64 / 2,
+                size.y / 2 + maps[mapIndex].size * 64 / 2 - 192,
+              ),
+            ),
+          );
         case const (ObstacleBlock):
         case const (ChimneyBlock):
         case const (SleighBlock):

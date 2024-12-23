@@ -10,7 +10,7 @@ class RoadBlock extends SpriteComponent with HasGameReference<SleighGame> {
   RoadBlock({
     required this.gridPosition,
     required this.offset,
-  }) : super(size: Vector2.all(64), anchor: Anchor.bottomLeft);
+  }) : super(size: Vector2.all(64), anchor: Anchor.topLeft);
 
   @override
   FutureOr<void> onLoad() {

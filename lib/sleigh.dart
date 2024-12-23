@@ -33,8 +33,8 @@ class SleighGame extends FlameGame {
             RoadBlock(
               gridPosition: block.gridPosition,
               offset: Vector2(
-                size.x / 2 - maps[mapIndex].size * 64 / 2,
-                size.y / 2 + maps[mapIndex].size * 64 / 2 - 192,
+                size.x / 2 - maps[mapIndex].size / 2 * 64,
+                size.y / 2 - maps[mapIndex].size / 2 * 64,
               ),
             ),
           );

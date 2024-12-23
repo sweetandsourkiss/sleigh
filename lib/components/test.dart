@@ -1,8 +1,8 @@
 import 'package:flame/components.dart';
 import 'package:flutter/material.dart';
-import 'package:spring/spring.dart';
+import 'package:spring/asphalt.dart';
 
-class Test extends PositionComponent with HasGameReference<Spring> {
+class Test extends PositionComponent with HasGameReference<AsphaltGame> {
   @override
   bool get debugMode => true;
 

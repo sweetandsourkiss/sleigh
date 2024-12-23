@@ -3,7 +3,7 @@ import 'package:flame/components.dart';
 import 'package:flame/game.dart';
 import 'package:spring/components/test.dart';
 
-class Spring extends FlameGame {
+class AsphaltGame extends FlameGame {
   @override
   FutureOr<void> onLoad() {
     final testComponent = Test()

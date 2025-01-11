@@ -42,6 +42,7 @@ class SleighGame extends FlameGame {
       'chimney/chimney_123.png',
       'chimney/chimney_124.png',
       'chimney/chimney_134.png',
+      'temp-sleigh.png',
     ]);
     camera.viewfinder.anchor = Anchor.topCenter;
     camera.viewfinder.visibleGameSize = Vector2(size.x, size.y);
